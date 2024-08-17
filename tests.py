@@ -70,11 +70,11 @@ class TestBooksCollector:
         assert "Любимая книга" in collector.get_list_of_favorites_books()
     def test_delete_book_from_favorites(self): #удаление книги из избранного
         collector = BooksCollector()
-        collector.add_new_book("Любимая книга1")
-        collector.set_book_genre("Любимая книга1", "Комедии")
-        collector.add_book_in_favorites("Любимая книга1")
-        collector.delete_book_from_favorites("Любимая книга1")
-        assert "Любимая книга1" not in collector.get_list_of_favorites_books()
+        collector.add_new_book("Любимая книга2")
+        collector.set_book_genre("Любимая книга2", "Комедии")
+        collector.add_book_in_favorites("Любимая книга2")
+        collector.delete_book_from_favorites("Любимая книга2")
+        assert "Любимая книга2" not in collector.get_list_of_favorites_books()
 
 
 
